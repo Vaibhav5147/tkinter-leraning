@@ -1,0 +1,82 @@
+Git Commands
+Part 1
+set user name an email
+# git config --global user.name "your Name"
+# git config --global user.email Your Email Address"
+
+Part 2
+to open Visual studio code use
+# code .
+Part 3 
+to get Repo we can use two ways
+1.init-we starts from starting
+2.clone-we get all the codes at same time
+# git init
+initilise the repo
+# ls -lart
+it shows all the hidden folders
+# git status
+to check the the status
+Part 4
+we have 4 types of files
+1.Untraced file   2.Unmodified file    3.Modified file     4.Staging Area
+Add the file--------------------------------------------------->|
+                  Edit the file-------->stage the file--------->|
+   |<--------------Remove the File <----commit------------------|
+
+to add the file
+# git add Filename.extansion
+to commit the file
+# git commit
+to create the new the file
+# touch filename.extansion
+to add all the existing file to Stagging Area
+# git add -A
+During Commit to Avoid the vim editor 
+# git commit -m "Message to show"
+to match the file fron last commit
+# git checkout filename.ext
+for all file
+#  git checkout -f
+to check the logs
+# git log
+to check specific no of cummits
+# git log -p -(no of commits)
+to compare working directory from Stagging Area
+# git diff
+To compare stagging Area from last Commit
+# git diff --staged 
+To skip the Stagging Area before commit
+# git commit -a -m "Skipped Staging Area and Commit"
+After commit Remove or Delete file completely 
+# git rm
+To remove file from stagging Area
+# git rm --cached filename.ext
+To check the the Summary of status
+# git status -s
+To ignore the file during push and pull create .gitignore file
+and add the file name  in that .gitignore file
+# touch .gitignore
+use "/" before the file which tell ignore the file where .gitignore is present otherwise skipped
+To remove the all file with particular extension add file name with   " *.(ext of file)"
+Part 5
+Making of Branches
+Do not work with Master Branch Try to create branch to create and switched branch
+# git branch BrancheName
+To switched
+# git checkout BranchName
+To create and switched branch
+# git checkout -b branchname
+Merging of to Branch
+# git merge
+Part 6
+To use remote repo
+# git remote add origin link 
+# git remote -v
+To push Master Branch to Origin
+# git push origin master
+
+
+
+
+
