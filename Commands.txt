@@ -70,6 +70,8 @@ To create and switched branch
 Merging of to Branch
 # git merge
 Part 6
+To add remote repo
+# git remote add <repo name><Repo Url>
 To use remote repo
 # git remote add origin link 
 # git remote -v
